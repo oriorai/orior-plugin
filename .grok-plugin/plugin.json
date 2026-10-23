@@ -1,0 +1,19 @@
+{
+  "name": "orior-ai",
+  "version": "1.0.0",
+  "description": "Create photorealistic images and videos of the same AI character every time, right in chat. Save a character from a few face photos or a preset, put them into any photo you share with its pose and setting kept, show your products in their hands, turn images into videos, and post or schedule them to the character's Instagram, TikTok, YouTube, Threads and X accounts. Sign in with your Orior AI account, no API key needed.",
+  "author": {
+    "name": "Orior AI",
+    "url": "https://www.oriorai.com"
+  },
+  "homepage": "https://www.oriorai.com/mcp",
+  "repository": "https://github.com/oriorai/orior-plugin",
+  "license": "MIT",
+  "keywords": [
+    "orior",
+    "orior ai",
+    "oriorai",
+    "orior mcp"
+  ],
+  "logo": "assets/logo.png"
+}

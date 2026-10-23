@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "orior": {
+      "type": "http",
+      "url": "https://www.oriorai.com/api/mcp"
+    }
+  }
+}
