@@ -11,7 +11,7 @@ The repository holds only manifests, skills and a logo. It ships no scripts, hoo
 - Create new scenes from a description, with the character holding or showing a saved product.
 - Turn an image into a video with one of several video models, with sound on the models that support it.
 - Upload photos and clips from your workspace.
-- Post or schedule images and videos to the character's Instagram, TikTok, YouTube, Threads and X accounts (paid plans).
+- Post or schedule images and videos to the character's Instagram, TikTok, YouTube, Threads and X accounts, or let the character post every day with a scheduled task (paid plans).
 - Check your credits and the price of a request before anything runs.
 
 ## Connect
@@ -40,16 +40,17 @@ The same server works as a custom MCP server in any client that supports remote 
 https://www.oriorai.com/api/mcp
 ```
 
-Setup for Claude, ChatGPT, Claude Code, Cursor and Grok Bot is at [oriorai.com/mcp](https://www.oriorai.com/mcp).
+Setup for Claude, ChatGPT, Claude Code and Grok Bot is at [oriorai.com/mcp](https://www.oriorai.com/mcp).
 
 ## Credits
 
 - The plugin is free. Images and videos spend credits from your Orior AI balance, the same balance as the Orior AI app.
-- New accounts start with free credits. Plans and credit packs are at [oriorai.com](https://www.oriorai.com).
+- A new account that connects from a chat gets credits for its first image. Plans and credit packs are at [oriorai.com](https://www.oriorai.com).
 - Reads, uploads, price checks, saving a character from photos and saving products are free.
 - The agent checks the price with `quote_price` and asks before videos, larger batches, 4K images, preset characters and social posts.
 - Failed and cancelled generations are refunded automatically.
 - Social posting needs a paid plan.
+- `set_credit_limit` caps what the connection may spend in a month; only you can raise or remove the cap, at [oriorai.com/dashboard/mcp](https://www.oriorai.com/dashboard/mcp).
 
 ## Skills
 

@@ -12,7 +12,7 @@ Orior AI tools take media as an upload ID (`upl_...`), a public https link or a 
 - If the file is already at a public https link, pass the link directly. No upload needed.
 - Grok Bot keeps attached files in its cloud workspace and Cursor works in the project folder. Find the file there.
 - If you cannot run shell commands, ask the person for a public link instead.
-- `open_upload_box` shows an upload box in some apps only. In Grok Bot and Cursor use the steps below.
+- Grok Bot has no upload box: when the person attaches a photo, upload it with the steps below instead of asking for a link.
 
 ## Steps
 

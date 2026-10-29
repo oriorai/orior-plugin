@@ -34,12 +34,16 @@ Rules that keep the result right:
 
 ## Waiting for results
 
-- A generate call waits up to 45 seconds. If the result is not ready, it returns a generation ID (`gen_...`).
+- A generate call waits up to the time the server instructions give (45 seconds in most apps, longer in Grok Bot). If the result is not ready, it returns a generation ID (`gen_...`).
 - Then call `get_generation` with that ID and `wait_seconds` (up to 240) until the status is completed, failed or cancelled.
 - Never call a generate tool again to check on a running job. `get_generation` never charges.
-- When it is done, give the full size link (`result.url`). Grok Bot and Cursor may show no image card, so always write the link in the reply.
+- When it is done, give the full size link (`result.url`). In Grok Bot, show a finished image in the reply as a Markdown image, `![short description](result.url)`; videos stay links.
 - Failed and cancelled generations are refunded automatically. Pass the error message on. If a request is blocked for content, do not reword it to get around the block.
 
 ## Apps without cards
 
-`open_creation_card` and `open_upload_box` show interactive cards in some apps only. Grok Bot and Cursor may display nothing. In those apps, confirm the character, photos and settings in plain text, then call the tool yourself.
+`open_creation_card` and `open_upload_box` show interactive cards in Claude and ChatGPT only, and Grok Bot does not get them. There, confirm the character, photos and settings in plain text, then call the tool yourself. For the person's own photos, see the `orior-upload-files` skill.
+
+## After the first image
+
+Offer one concrete next step with its price: the same character in other places or outfits, a short video from that image (`start_frame`), or a daily post (see the `orior-daily-posts` skill).

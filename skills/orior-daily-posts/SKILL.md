@@ -31,6 +31,20 @@ Orior AI can publish images and videos to a character's own social accounts, now
 - Keep the same character and a consistent look; vary place, pose and moment so the feed feels real.
 - `list_social_posts` shows what is scheduled and what went out.
 
+## Post every day with a scheduled task
+
+In apps that run scheduled tasks, Grok Bot routines for example, the character can post on its own every day.
+
+1. Agree on the time (in the person's time zone), the platform and what the feed is about.
+2. Check `list_social_accounts`; connect a missing account with `create_social_connect_link`.
+3. Work out the price of one run (one image plus one post, from `quote_price` and `list_models`) and of a month of runs. Tell the person and wait for a yes.
+4. Offer a monthly credit limit for this connection with `set_credit_limit`, so the task can never spend more than they agreed.
+5. Make the first photo now, show it with its caption, and create the task only after the person's yes.
+6. Each run: one new photo with `generate_image` (a fresh scene, outfit and moment, the same character), a short caption in the character's voice, then `publish_social_post` without `scheduled_at`.
+7. When credits run out, the run stops without charging. Tell the person on their next message, with the link from the error.
+
+The ready made `daily_post_routine` prompt sets this up.
+
 ## Never
 
 - Post or schedule without a yes on the final content.

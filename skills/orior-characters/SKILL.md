@@ -16,7 +16,7 @@ Every Orior AI image or video that features a person works best with a saved cha
 
 ## Create a character from face photos
 
-Use `create_character` when the person has photos of the face they want. It is free.
+Use `create_character` when the person has photos of the face they want. It is free. The Free plan holds 1 character; if the limit is reached, the error lists what each plan holds and links to the plans, and the person can also delete a character first.
 
 - `name`: up to 30 characters. `gender`: `male` or `female`.
 - `images`: 1 to 3 photos of the same face. Put a clear front view first; more angles improve the likeness.
